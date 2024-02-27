@@ -54,9 +54,9 @@ const fetchRecipes = async (query) => {
         recipeDetailsContent.parentElement.style.display = "block";
     }
 
-recipeCloseBtn.addEventListener('click', ()=>{
-    recipeDetailsContent.parentElement.style.display ="none";
-});
+// recipeCloseBtn.addEventListener('click', ()=>{
+//     recipeDetailsContent.parentElement.style.display ="none";
+// });
     searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const searchInput = searchBox.value.trim();

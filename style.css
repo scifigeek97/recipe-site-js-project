@@ -1,22 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    color: #ffffff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #0e0b0b;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: "Trirong", serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
     
 }
+
 body{
-    background-color: #ffbc9b;
+    background-color: #ffffff;
 }
 /* Main Section */
-.recipe-container {
+.recipe-container { 
     text-align: center;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat (auto-fit);
     }
 header nav {
-    background-color: #f88131;
+    background-color: #ec4040;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -25,10 +29,43 @@ header nav {
     z-index: 1;
 }
 header nav h1{
-    font-size: 25px;
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
     font-weight: 700px;
     letter-spacing: 1px;
     text-transform:capitalize;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+form input[type="text"],button[type="submit"]{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ form button[type="submit"]{
+    background-color: rgba(247, 113, 3, 0.944);
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+ }
+
+form button[type="submit"]:hover{
+    background-color: rgb(190, 128, 92);
+
 }
 
     
