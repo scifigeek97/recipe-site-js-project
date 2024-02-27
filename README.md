@@ -3,7 +3,7 @@ This is a Final project where we, Monarch Coders Hub, created a recipe website u
 ## Group Members:
 
 1) Anis Gul
-2) Sohaib Zafar
+2) Muhib Sami
 3) Wasif Hassan Niazi
 
 ## Project Features
