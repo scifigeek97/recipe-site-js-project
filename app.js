@@ -22,7 +22,6 @@ const fetchRecipes = async (query) => {
         recipeContainer.appendChild(recipeDiv);
         });
     }
-<<<<<<< HEAD
     // Function to fetch ingredients and measurement
     const fetchIngredients = (meal) => {
         let ingredientsList = "";
@@ -55,15 +54,11 @@ const fetchRecipes = async (query) => {
         recipeDetailsContent.parentElement.style.display = "block";
     }
 
-recipeCloseBtn.addEventListener('click', ()=>{
-    recipeDetailsContent.parentElement.style.display ="none";
-});
+// recipeCloseBtn.addEventListener('click', ()=>{
+//     recipeDetailsContent.parentElement.style.display ="none";
+// });
     searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
-=======
-    searchBtn.addEventListener('click', (e) => { 
-        e.preventDefault();
->>>>>>> eac5060b7a6f2aed759c8881122babf7eeecf969
     const searchInput = searchBox.value.trim();
     fetchRecipes (searchInput);
     console.log("Button Clicked");
