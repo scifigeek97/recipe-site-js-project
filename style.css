@@ -124,7 +124,7 @@ form button[type="submit"]:hover, .recipe button:hover{
     left: 50%;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
-    background-color: #f17127af;
+    background-color: #da8554af;
     border-radius: 12px;
     width: 40%;
     height: 60%;
