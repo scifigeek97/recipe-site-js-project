@@ -22,8 +22,17 @@ recipeContainer.innerHTML ="";
         recipeDiv.innerHTML = 
        ` <img src="${meal.strMealThumb}">
         <h3>${meal.strMeal}</h3>
-        <p>${meal.strArea}</p>
-        <p>${meal.strCategory}</p>`
+        <p><span>${meal.strArea}</span> Dish</p>
+        <p>Belongs to <span>${meal.strCategory}</span> Category</p>`
+        const button =  document.createElement('button');
+        button.textContent = "View Recipe";
+        recipeDiv.appendChild(button);
+
+        // Adding eventlistener
+        button.addEventListener('click', ()=>{ openRecipePopup(meal);
+        });
+
+
         recipeContainer.appendChild(recipeDiv);
         });
     }
@@ -43,7 +52,22 @@ recipeContainer.innerHTML ="";
             }
             }
         
-    
+    // // Func to fetch ingredients
+    // const fetchIngredients = (meal) => {
+    //     let ingredientsList = "";
+    //     for (let i = 1; i <= 20; i++) {
+    //     const ingredient = meal[`strIngredient${i}`];
+    //     if (ingredient) {
+    //     const measure = meal [`strMeasure${i}`];
+    //     ingredientsList += `<li>${measure} ${ingredient}</li>`
+    //     }
+    //     else {
+    //     break;
+    //     }
+    //     }
+    //     return ingredientsList;
+    // }
+    //
     const openRecipePopup = (meal) => {
         recipeDetailsContent.innerHTML = `
         <h2 class="recipeName">${meal.strMeal}</h2>
@@ -51,7 +75,7 @@ recipeContainer.innerHTML ="";
         <ul class="ingredientsList">${fetchIngredients(meal)}</ul>
         <div>
             <h3>Instruction:</h3>
-            <p class="recipeInstruction">${meal.strInstruction}</p>
+            <p class="recipeInstruction">${meal.strInstructions}</p>
             </div>
         
         `
@@ -59,9 +83,9 @@ recipeContainer.innerHTML ="";
         recipeDetailsContent.parentElement.style.display = "block";
     }
 
-// recipeCloseBtn.addEventListener('click', ()=>{
-//     recipeDetailsContent.parentElement.style.display ="none";
-// });
+recipeCloseBtn.addEventListener('click', ()=>{
+    recipeDetailsContent.parentElement.style.display ="none";
+});
     searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const searchInput = searchBox.value.trim();
