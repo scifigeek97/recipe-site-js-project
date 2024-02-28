@@ -7,10 +7,15 @@ const recipeCloseBtn = document.querySelector('.recipe-close-btn');
 // Function to get recipes
 // await keyword  makes it wait for the data to be retrived before executing next line
 const fetchRecipes = async (query) => {
+    recipeContainer.innerHTML ="fetching Recipes...";
+
     const data = await fetch(` https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`) ;
     const response = await data.json();
+  
+  
+  
     // console.log(response);
-
+recipeContainer.innerHTML ="";
     response.meals.forEach(meal => {
         const recipeDiv = document.createElement('div');
         recipeDiv.classList.add('recipe');
