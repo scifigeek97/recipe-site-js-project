@@ -7,9 +7,9 @@ This is a Final project where we, Monarch Coders Hub, created a recipe website u
 3) Wasif Hassan Niazi
 
 ## Project Features
-1) 
-2) 
-3)
-4) 
+1) a dynamic landing page
+2) a recipe page that uses API to fetch data
+3) Views recipes upon search query and displays them accordingly
 
-## Preview Project Here
+## View Preview Project Here
+LIVE URL: https://allrecipes-app.netlify.app/
