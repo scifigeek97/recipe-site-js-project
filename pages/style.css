@@ -36,12 +36,20 @@ header nav h1{
     letter-spacing: 1px;
     text-transform:capitalize;
     color: #184d0e;
+    left: - 20%;
 }
 
 header nav form{
     display: flex;
     justify-content: center;
 
+}
+header nav img{
+    border-radius: 50%;
+    
+}
+header nav a{
+    text-decoration: none;
 }
 
 form input[type="text"]{
@@ -69,7 +77,9 @@ form button[type="submit"]:hover, .recipe button:hover{
 
 }
 /*main section*/
-
+main{
+    height: 80%;
+}
 .recipe-container{
     text-align: center;
     margin-top: 20px;
